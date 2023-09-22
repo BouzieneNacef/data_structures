@@ -5,4 +5,12 @@ def factorial(n):
     else:
         return n*factorial(n-1)
     
-print(factorial(10))
+print(factorial(5))
+
+def factorial2(n):
+    factorial = 1
+    for i in range(1, n+1): 
+        factorial *= i  
+    return factorial
+
+print(factorial2(5))

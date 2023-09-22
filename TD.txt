@@ -1,0 +1,16 @@
+CREATE OR REPLACE TRIGGER TRG_DIM_SAL
+AFTER UPDATE OF Salaire ON Emp
+FOR EACH ROW
+WHEN (new.salaire < old.salaire )
+BEGIN
+Raise_application_error(-20001, 'Le salaire ne peut pas diminuer.');
+END;
+ ahla chabeb
+ ahla chabeb
+ ahla chabeb
+ ahla chabeb
+ ahla chabeb
+ ahla chabeb
+ ahla chabeb
+ ahla chabeb
+ ahla chabeb
